@@ -1,0 +1,149 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* HEADER Y FOOTER */
+
+.main-header {
+  background-color: #003366;
+  color: #fff;
+  padding: 0.5rem 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.site-footer {
+  background-color: #003366;
+  padding: 1rem 3rem;
+  color: #fff;
+}
+
+
+
+/* LAYOUT GENERAL */
+.layout {
+  display: grid;
+  grid-template-areas: "sidebar hero";
+  grid-template-columns: 250px 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* SIDEBAR */
+.sidebar-box {
+  grid-area: sidebar;
+  background-color: #2c2c2c;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.sidebar-box h2 {
+  text-align: center;
+  color: 	#a9cce3
+}
+
+.list-items {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1rem;
+  color: white; 
+}
+
+.sidebar-box:hover {
+  background-color: #004c99;
+  border-color: #004c99;
+}
+
+.list-items :hover {
+    color: rgb(254, 141, 12);
+    text-decoration:wavy;
+}
+
+/* GRILLA DE PRODUCTOS */
+.hero {
+  grid-area: hero;
+  background-color: #292929;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* TARJETAS DE PRODUCTO */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5;
+  color: #000;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+
+.card-img {
+  width: 100%;
+  max-width: 150px;
+  height: 200px;
+  margin-bottom: 0.5rem;
+}
+
+/* BOTONES */
+.botoncito {
+  border: 2px solid #003366;
+  border-radius: 5px;
+  background-color: #003366;
+  color: #fff;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.botoncito:hover {
+  background-color: #004c99;
+  border-color: #004c99;
+}
+
+/* FOOTER */
+.site-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
